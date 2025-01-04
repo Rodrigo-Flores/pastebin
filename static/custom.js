@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    const uri_prefix = process.env.URI;
+    const uri_prefix = process.env.URI || "";
 
     function replaceUrlParam(url, param, value) {
         if (value == null) {
